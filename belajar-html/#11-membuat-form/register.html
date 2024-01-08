@@ -1,0 +1,67 @@
+<!--Latihan: Membuat Form Register
+
+Form ini berisi field untuk:
+Input nama lengkap;
+Input username;
+Input email;
+Input password;
+Input jenis kelamin;
+Input Agama;
+Input Biografi.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML | Membuat form Register</title>
+</head>
+
+<body>
+    <form action="register.php" method="post">
+        <fieldset>
+            <legend>Formulir Pendaftaran</legend>
+            <p>
+                <label for="nama">Nama Lengkap :</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required />
+            </p>
+            <p>
+                <label for="username">User Name :</label>
+                <input type="text" id="username" name="username" placeholder="User Name" required />
+            </p>
+            <p>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Email" required />
+            </p>
+            <p>
+                <label for="password">Password :</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </p>
+            <p>
+                <label for="jeniskelamin">Jenis Kelamin :</label>
+                <select name="jeniskelamin" id="jeniskelamin">
+                    <option value="pria">Laki - Laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select>
+            </p>
+            <p>
+                <label for="agama">Agama :</label>
+                <select name="agama" id="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="buddha">Buddha</option>
+                </select>
+            </p>
+            <p>
+                <label for="about">Biografi :</label>
+                <input type="text" id="about" name="about">
+            </p>
+            <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</body>
+
+</html>
