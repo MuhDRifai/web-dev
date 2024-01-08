@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- External resource link -->
+    <title>Contoh Halaman</title>
+    <script src="script.js"></script> <!-- External resource link -->
+</head>
+<body>
+
+    <a href="#" onclick="handleClick()">Klik Saya</a> <!-- atribut event onclick -->
+    <br>
+    <a href="#" onmouseover="handleMouseOver()">Arahkan Mouse ke Sini</a> <!-- atribut event onmouseover -->
+    <br>
+    <a href="#" onmouseout="handleMouseOut()">Arahkan Mouse ke Sini</a><!-- atribut event onmouseout -->
+
+    <p id="top">
+        <a href="#penutup">Langsung menuju ke tag p dengan id penutup</a> <!-- Link Anchor -->
+    </p>
+    <p>Belajar membuat Hyperlink bisa klik tautan berikut: <a href="http://www.petanikode.com">Petani Kode</a></p>
+
+    <img src="gambar.jpg" alt="Deskripsi Gambar"> <!-- External resource link -->
+</body>
+</html>
+
+<script>
+    function handleClick() {
+        alert("Anda telah mengklik tautan!");
+    }
+
+    function handleMouseOver() {
+        alert("Mouse berada di atas tautan!");
+    }
+
+    function handleMouseOut() {
+        alert("Mouse meninggalkan tautan!");
+    }
+</script>

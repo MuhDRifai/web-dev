@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML | Membuat Form Contact Us</title>
+</head>
+<body>
+    <form action="contact.php" method="post">
+        <fieldset>
+            <legend><strong>Contact Us</strong></legend>
+            <p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Send">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
